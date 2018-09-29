@@ -7,11 +7,11 @@ public class BoxColor : MonoBehaviour
 {
     public void TurnRed()
     {
-        gameObject.GetComponent<RawImage>().material.color = Color.red;
+        gameObject.GetComponent<RawImage>().color = Color.red;
     }
 
     public void TurnOriginal()
     {
-        gameObject.GetComponent<RawImage>().material.color = Color.white;
+        gameObject.GetComponent<RawImage>().color = Color.white;
     }
 }

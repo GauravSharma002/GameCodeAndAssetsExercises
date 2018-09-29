@@ -2,25 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class DragHandler : MonoBehaviour, IDragHandler {
+public class DragHandler : MonoBehaviour{
 
-    public void OnDrag(PointerEventData eventData)
+    public Slider slide;
+
+    public void SliderBackgroundImage()
     {
-        transform.position = Input.mousePosition;
-    }
+        transform.localPosition = new Vector3(-slide.value, 0, 0);
+    }     
 
-    //public void OnEndDrag(PointerEventData eventData)
-    //{
-    //    transform.position = new Vector3();
-    //}
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    
 }
